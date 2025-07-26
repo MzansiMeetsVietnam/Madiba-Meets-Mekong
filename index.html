@@ -3,182 +3,186 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Madiba Meets Mekong</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Madiba Meets Vietnam</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #ffecd2, #fcb69f);
-      color: #222;
-    }
-    header {
-      background-color: #008080;
-      color: white;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    header h1 {
-      font-size: 1.8rem;
-    }
-    nav a {
-      margin-left: 1rem;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .hero {
-      text-align: center;
-      padding: 4rem 2rem;
-      background-image: url('https://images.unsplash.com/photo-1502784444185-cc74a1f21c94');
+      font-family: 'Roboto', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1518684079-3c830dcef090');
       background-size: cover;
       background-position: center;
       color: white;
-      position: relative;
     }
-    .hero::after {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.5);
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      text-align: center;
     }
-    .hero-content {
-      position: relative;
-      z-index: 1;
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
     }
-    .hero h2 {
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
+    .intro {
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      max-width: 800px;
+      margin: 30px auto;
+      border-radius: 15px;
     }
-    .hero p {
-      font-size: 1.2rem;
-    }
-    .section {
-      padding: 3rem 2rem;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    .cards {
+    .regions, .top-destinations, .experiences {
       display: flex;
       flex-wrap: wrap;
-      gap: 1.5rem;
       justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
     }
     .card {
-      background: white;
+      background-color: rgba(255, 255, 255, 0.15);
+      border: 1px solid #fff;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      width: 280px;
-      overflow: hidden;
+      width: 260px;
+      padding: 20px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+    .card a {
+      color: #ffe600;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
       text-align: center;
     }
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: 0 auto;
+      gap: 10px;
     }
-    .card h3 {
-      margin: 1rem 0 0.5rem;
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
     }
-    .card p {
-      padding: 0 1rem 1rem;
+    button {
+      padding: 12px;
+      background-color: #ffe600;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
     }
-    .footer {
-      background-color: #222;
-      color: white;
-      padding: 2rem;
+    .map-link {
+      margin-top: 20px;
       text-align: center;
     }
-    .social-icons a {
-      color: white;
-      margin: 0 0.5rem;
-      font-size: 1.4rem;
-    }
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
-      color: white;
-      border-radius: 50%;
-      padding: 15px;
-      font-size: 24px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      z-index: 999;
-      text-align: center;
-    }
-    .whatsapp-float:hover {
-      background-color: #1ebe5d;
-    }
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .hero h2 {
-        font-size: 2rem;
-      }
+    .map-link a {
+      color: #ffcc00;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Madiba Meets Mekong</h1>
-    <nav>
-      <a href="#tours">Tours</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>Madiba Meets Vietnam</h1>
+    <p>Authentic tours, hidden gems, and unforgettable adventures</p>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h2>South African Adventures in Vietnam</h2>
-      <p>Custom travel for South Africans looking to explore, relax, and connect in Vietnam.</p>
+  <section class="intro">
+    <h2>From Zululand to Vietnam</h2>
+    <p>I'm a farm boy from Zululand who lived and traveled across Vietnam for 8 years. Now I’m sharing the most breathtaking places and off-the-beaten-path experiences with fellow adventurers like you.</p>
+    <p>Explore, eat, party, and connect like a local. Our tours are personal, powerful, and unforgettable.</p>
+  </section>
+
+  <section class="regions">
+    <div class="card">
+      <h3>North Vietnam</h3>
+      <p>Hanoi, Sapa, Ha Long Bay, and the world’s largest cave.</p>
+      <a href="north-vietnam.html">Explore North</a>
+    </div>
+    <div class="card">
+      <h3>Central Vietnam</h3>
+      <p>Da Nang, Hoi An, Hue, and the stunning coastline.</p>
+      <a href="central-vietnam.html">Explore Central</a>
+    </div>
+    <div class="card">
+      <h3>South Vietnam</h3>
+      <p>Ho Chi Minh City, Mekong Delta, and Phu Quoc Island.</p>
+      <a href="south-vietnam.html">Explore South</a>
     </div>
   </section>
 
-  <section class="section" id="tours">
-    <h2 style="text-align: center;">Top Destinations</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1544375923-4f9ec9b41707" alt="Phu Quoc">
-        <h3>Phu Quoc</h3>
-        <p>White sand beaches, BBQs, local craft beer and island hopping tours.</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1599203180619-87ad3f4b95c3" alt="Nha Trang">
-        <h3>Nha Trang</h3>
-        <p>Beach city vibe with scuba diving, night markets and nightlife.</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1586495985093-3e10fd3d6a7c" alt="Mui Ne">
-        <h3>Mui Ne</h3>
-        <p>Sand dunes, kite surfing and South African-style beach resorts.</p>
-      </div>
+  <section class="top-destinations">
+    <div class="card">
+      <h3>Phu Quoc Island</h3>
+      <p>Voted one of Asia’s top beach escapes. Great food, nightlife, and boat tours.</p>
+      <a href="phu-quoc.html">More Info</a><br>
+      <a href="https://wa.me/27794720078?text=I want to book a Phu Quoc tour" target="_blank">Book Tour</a>
+    </div>
+    <div class="card">
+      <h3>Da Nang</h3>
+      <p>Surf, hike, and eat in Vietnam’s cleanest and most livable city.</p>
+      <a href="danang.html">More Info</a><br>
+      <a href="https://wa.me/27794720078?text=I want to book a Da Nang tour" target="_blank">Book Tour</a>
+    </div>
+    <div class="card">
+      <h3>Ha Long Bay</h3>
+      <p>World heritage site. Limestone cliffs, overnight cruises, and hidden coves.</p>
+      <a href="ha-long-bay.html">More Info</a><br>
+      <a href="https://wa.me/27794720078?text=I want to book a Ha Long Bay tour" target="_blank">Book Tour</a>
+    </div>
+    <div class="card">
+      <h3>Son Doong Cave</h3>
+      <p>The largest cave in the world. A must-see for true explorers.</p>
+      <a href="son-doong.html">More Info</a><br>
+      <a href="https://wa.me/27794720078?text=I want to book a cave adventure" target="_blank">Book Tour</a>
     </div>
   </section>
 
-  <section class="section" id="contact">
-    <h2 style="text-align: center;">Contact & Booking</h2>
-    <p style="text-align: center;">Got questions or ready to plan your trip? Message us on WhatsApp or Facebook!</p>
-    <div class="social-icons" style="text-align: center;">
-      <a href="https://wa.me/27794720078" target="_blank" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  <section class="experiences">
+    <div class="card">
+      <h3>Boat Braais</h3>
+      <p>BBQ + beers + islands + music. Perfect for groups and parties!</p>
+      <a href="boat-braai-tours.html">Learn More</a>
+    </div>
+    <div class="card">
+      <h3>Secret Waterfalls</h3>
+      <p>Jungle treks to magical falls only locals know.</p>
+      <a href="https://wa.me/27794720078?text=I want a secret waterfall tour" target="_blank">Book</a>
+    </div>
+    <div class="card">
+      <h3>Surfing Lessons</h3>
+      <p>Catch a wave in Da Nang or Mui Ne with local instructors.</p>
+      <a href="https://wa.me/27794720078?text=I want surf lessons" target="_blank">Book</a>
+    </div>
+    <div class="card">
+      <h3>Bike Across Vietnam</h3>
+      <p>Rent bikes for epic solo or guided cross-country trips.</p>
+      <a href="https://wa.me/27794720078?text=I want to rent a bike and ride Vietnam!" target="_blank">Start Trip</a>
     </div>
   </section>
 
-  <footer class="footer">
-    <p>&copy; 2025 Madiba Meets Mekong | South Africa ✈ Vietnam</p>
+  <section class="intro">
+    <h2>Booking & Inquiries</h2>
+    <form name="booking-form" method="POST" data-netlify="true">
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="email" name="email" placeholder="Your email" required />
+      <textarea name="message" rows="4" placeholder="Which tour or info are you interested in?" required></textarea>
+      <button type="submit">Send Booking Inquiry</button>
+    </form>
+  </section>
+
+  <div class="map-link">
+    <p><a href="https://maps.google.com?q=vietnam" target="_blank">View Vietnam on Google Maps</a></p>
+  </div>
+
+  <footer>
+    <p>🇿🇦 Madiba Meets Vietnam | ✉️ hughboynewlands@gmail.com | 📞 +27 79 472 0078</p>
+    <p><a href="visa-travel-tips.html" style="color: #ffe600;">Visa & Travel Info</a> | <a href="contact-booking.html" style="color: #ffe600;">Contact Us</a></p>
   </footer>
-
-  <a href="https://wa.me/27794720078" class="whatsapp-float" title="Message us on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-
 </body>
 </html>
